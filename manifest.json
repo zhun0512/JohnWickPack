@@ -1,9 +1,138 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
 	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.25.1"
+	"id": "zhun0512.john_wick",
+	"name": "HITMAN 3 - John Wick",
+	"description": "John Wick has arrived in HITMAN 3! Take on the role of the legendary assassin and eliminate your targets with style and precision.",
+	"authors": ["zhun0512"],
+	"frameworkVersion": "2.33.35",
+	"options": [
+		{
+			"group": "Head Replacement",
+			"name": "None",
+			"tooltip": "No changes were being made.",
+			"type": "select",
+			"contentFolders": ["modcontent/none"]
+		},
+		{
+			"group": "Head Replacement",
+			"name": "John Wick 1",
+			"tooltip": "All back hair style.",
+			"type": "select",
+			"contentFolders": ["modcontent/shared_johnwickhead", "modcontent/option_johnwickhead_1"],
+			"image": "frameworkcontent/johnwick1.jpg"
+		},
+		{
+			"group": "Head Replacement",
+			"name": "John Wick 2",
+			"tooltip": "Medium hair style.",
+			"type": "select",
+			"contentFolders": ["modcontent/shared_johnwickhead", "modcontent/option_johnwickhead_2"],
+			"image": "frameworkcontent/johnwick2.jpg"
+		},
+		{
+			"group": "Common Coin",
+			"name": "None",
+			"tooltip": "No changes were being made.",
+			"type": "select",
+			"contentFolders": ["modcontent/none"]
+		},
+		{
+			"group": "Common Coin",
+			"name": "Gold Token",
+			"tooltip": "Retexture coin to look like gold token from john wick series.",
+			"type": "select",
+			"contentFolders": ["modcontent/content_coin"],
+			"blobsFolders": ["modcontent/blobs_coin"],
+			"image": "frameworkcontent/coin.jpg"
+		},
+		{
+			"group": "47's Signature Suit",
+			"name": "None",
+			"tooltip": "No changes were being made.",
+			"type": "select",
+			"contentFolders": ["modcontent/none"]
+		},
+		{
+			"group": "47's Signature Suit",
+			"name": "Day Suit",
+			"tooltip": "Black suit, white shirt, black tie.",
+			"type": "select",
+			"contentFolders": ["modcontent/content_signaturesuit"],
+			"blobsFolders": ["modcontent/blobs_signaturesuit"],
+			"image": "frameworkcontent/signaturesuit.jpg"
+		},
+		{
+			"group": "Absolution Suit",
+			"name": "None",
+			"tooltip": "No changes were being made.",
+			"type": "select",
+			"contentFolders": ["modcontent/none"]
+		},
+		{
+			"group": "Absolution Suit",
+			"name": "Black Suit",
+			"tooltip": "Black suit, shirt, and tie.",
+			"type": "select",
+			"contentFolders": ["modcontent/content_absolution"],
+			"blobsFolders": ["modcontent/blobs_absolution"],
+			"image": "frameworkcontent/absolution.jpg"
+		},
+		{
+			"group": "Terminus Suit",
+			"name": "None",
+			"tooltip": "No changes were being made.",
+			"type": "select",
+			"contentFolders": ["modcontent/none"]
+		},
+		{
+			"group": "Terminus Suit",
+			"name": "Finale Suit",
+			"tooltip": "Black suit, vest and tie, white shirt.",
+			"type": "select",
+			"contentFolders": ["modcontent/content_terminus"],
+			"blobsFolders": ["modcontent/blobs_terminus"],
+			"image": "frameworkcontent/terminus.jpg"
+		},
+		{
+			"group": "Midnight Black Suit",
+			"name": "None",
+			"tooltip": "No changes were being made.",
+			"type": "select",
+			"contentFolders": ["modcontent/none"]
+		},
+		{
+			"group": "Midnight Black Suit",
+			"name": "Night Suit",
+			"tooltip": "Black suit, shirt, vest and tie.",
+			"type": "select",
+			"contentFolders": ["modcontent/content_blacksuit"],
+			"blobsFolders": ["modcontent/blobs_blacksuit"],
+			"image": "frameworkcontent/blacksuit.jpg"
+		},
+		{
+			"group": "The Solstice Suit",
+			"name": "None",
+			"tooltip": "No changes were being made.",
+			"type": "select",
+			"contentFolders": ["modcontent/none"]
+		},
+		{
+			"group": "The Solstice Suit",
+			"name": "Italy Suit",
+			"tooltip": "Black suit, black turtle neck, no pin.",
+			"type": "select",
+			"contentFolders": ["modcontent/content_solsticeduck"],
+			"blobsFolders": ["modcontent/blobs_solsticeduck"],
+			"image": "frameworkcontent/solsticeduck.jpg"
+		}
+	],
+	"dependencies": [
+		{
+			"runtimeID": "002F5293D4F41A8D",
+			"toChunk": 0,
+			"portFromChunk1": false
+		}
+	],
+	"updateCheck": "https://github.com/zhun0512/JohnWickPack/releases/latest/download/updates.json"
 }

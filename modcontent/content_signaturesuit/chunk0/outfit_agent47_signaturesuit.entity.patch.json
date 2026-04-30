@@ -1,0 +1,22 @@
+{
+	"tempHash": "00FF8C6314EA882E",
+	"tbluHash": "0046BB3BE76661CC",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"6497347d10ed9d0e",
+				{
+					"SetPropertyValue": {
+						"property_name": "ConstantColorRGB_05_Value",
+						"value": "#404040"
+					},
+					"SetPropertyValue": {
+						"property_name": "ConstantColorRGB_02_Value",
+						"value": "#404040"
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

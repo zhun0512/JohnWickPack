@@ -1052,7 +1052,7 @@
 				"m_pMeshResource": {
 					"type": "ZRuntimeResourceID",
 					"value": {
-						"resource": "[assembly:/_pro/characters/assets/hero/agent47_outfits/geometry/agent47_snakecharmer.wl2?/waistcoat_plain_5btn_long.weightedprim](bodypart).pc_weightedprim",
+						"resource": "00E8BECC54AD6A48",
 						"flag": "5F"
 					}
 				},

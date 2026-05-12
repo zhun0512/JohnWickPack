@@ -136,7 +136,7 @@ jobs:
                       # ${{ steps.modName.outputs.prop }}
                       ${{ steps.modDesc.outputs.prop }}
 
-                      [Install](https://hitman-resources.netlify.app/smf-install-link/${{ format('https://github.com/{0}/releases/latest/download/mod.framework.zip', github.repository) }}) | [Download](${{ format('https://github.com/{0}/releases/latest/download/mod.framework.zip', github.repository) }})
+                      [Mod Manager Download](https://hitman-resources.netlify.app/smf-install-link/${{ format('https://github.com/{0}/releases/latest/download/John_Wick_Pack.zip', github.repository) }}) | [Manual Download](${{ format('https://github.com/{0}/releases/latest/download/John_Wick_Pack.zip', github.repository) }})
 
                       ---
 
@@ -180,7 +180,7 @@ jobs:
               if: ${{ steps.newVersion.outputs.new-release-version }}
               uses: TheDoctor0/zip-release@4fb9e4ff72847dd3d1c111cf63834e353ed7cb3d
               with:
-                  filename: mod.framework.zip
+                  filename: John_Wick_Pack.zip
                   path: ${{ steps.modID.outputs.prop }}
 
             - name: Create updates.json
@@ -188,7 +188,7 @@ jobs:
               env:
                   VERSION: ${{ toJSON(steps.newVersion.outputs.new-release-version) }}
                   CHANGELOG: ${{ toJSON(steps.changelog.outputs.changes) }}
-                  URL: ${{ format('https://github.com/{0}/releases/latest/download/mod.framework.zip', github.repository) }}
+                  URL: ${{ format('https://github.com/{0}/releases/latest/download/John_Wick_Pack.zip', github.repository) }}
               run: |
                   echo "{\"version\":$VERSION,\"changelog\":$CHANGELOG,\"url\":\"$URL\"}" > updates.json
 
@@ -197,9 +197,9 @@ jobs:
               uses: softprops/action-gh-release@v1
               with:
                   name: ${{ steps.newVersion.outputs.new-release-version }}
-                  body: "[Install](https://hitman-resources.netlify.app/smf-install-link/${{ format('https://github.com/{0}/releases/download/{1}/mod.framework.zip', github.repository, steps.newVersion.outputs.new-release-version) }}) | [Download](${{ format('https://github.com/{0}/releases/download/{1}/mod.framework.zip', github.repository, steps.newVersion.outputs.new-release-version) }})\n\n${{ steps.changelog.outputs.changes }}"
+                  body: "[Mod Manager Download](https://hitman-resources.netlify.app/smf-install-link/${{ format('https://github.com/{0}/releases/download/{1}/John_Wick_Pack.zip', github.repository, steps.newVersion.outputs.new-release-version) }}) | [Manual Download](${{ format('https://github.com/{0}/releases/download/{1}/John_Wick_Pack.zip', github.repository, steps.newVersion.outputs.new-release-version) }})\n\n${{ steps.changelog.outputs.changes }}"
                   tag_name: ${{ steps.newVersion.outputs.new-release-version }}
                   repository: ${{ github.repository }}
                   files: |
-                      mod.framework.zip
+                      John_Wick_Pack.zip
                       updates.json
